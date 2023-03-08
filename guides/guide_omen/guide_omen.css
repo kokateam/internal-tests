@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper_guide_omen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(17, 27, 45), rgba(16, 24, 35, .7)), url('../../img/tiny-squares.png'), url("https://sun9-west.userapi.com/sun9-12/s/v1/ig2/aaukE4OiXRPTG7zLmwrhAYJOG58uFbf31DXZKN7hsOjdVJY2CIHU0mj3jBHiyt0ZWesWJlE9Xpd4xb3RV0_6480U.jpg?size=2560x1376&quality=95&type=album");
+    background-size: 135%;
+    background-repeat: no-repeat;
+    height: 93vh;
+    background-color: #1a1f2d;
+    overflow-x: hidden;
+}
+
+.guide_omen {
+    margin-top: 50px;
+    width: 1320px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.agent_info {
+    display: flex;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.guide_description h3 {
+    color: #00FCCE;
+}
+
+.guide_description span {
+    color: #ec555a;
+}
+
+.guide_description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container_guide_omen {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.generalPoints h2 {
+    color: #ec555a;
+}
+
+.generalPoints h4 {
+    color: #00FCCE;
+}
+
+.generalPoints span {
+    color: #ec555a;
+}
+
+@media (max-width: 420px) {
+    .wrapper_guide_omen {
+        background-size: 350%;
+    }
+
+    .guide_omen {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide_omen h1 {
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .agent_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agent_info img {
+        width: 200px;
+    }
+
+    .guide_description {
+        width: 350px;
+    }
+
+    .guide_description h2{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .generalPoints {
+        width: 350px;
+    }
+}

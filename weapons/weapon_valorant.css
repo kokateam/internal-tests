@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.wrapper_weapons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(17, 27, 45), rgba(16, 24, 35, .7)), url("../img/tiny-squares.png"), url("https://sun9-west.userapi.com/sun9-12/s/v1/ig2/aaukE4OiXRPTG7zLmwrhAYJOG58uFbf31DXZKN7hsOjdVJY2CIHU0mj3jBHiyt0ZWesWJlE9Xpd4xb3RV0_6480U.jpg?size=2560x1376&quality=95&type=album");
+    background-size: 135%;
+    background-repeat: no-repeat;
+    height: 88vh;
+    background-color: #1a1f2d;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+.all_cards_weapon {
+    width: 1320px;
+    color: #ffffff;
+}
+
+.all_cards_weapon h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.all_cards_weapon h2 {
+    margin-bottom: 10px;
+}
+
+.card_weapon a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card_weapon {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.card_weapon a:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+@media (max-width: 420px) {
+    .all_cards_weapon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .card_weapon {
+        flex-wrap: wrap;
+    }
+
+    .card_weapon a img {
+        width: 100px;
+    }
+
+    .all_cards_weapon h1 {
+        font-size: 30px;
+    }
+
+    .all_cards_weapon h2 {
+        font-size: 15px;
+    }
+
+    .wrapper_weapons {
+        background-size: 350%;
+    }
+}

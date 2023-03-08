@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Анимация прокрутки при скролле */
+.element-animation {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.wrapper_news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(17, 27, 45), rgba(16, 24, 35, .7)), url("../img/tiny-squares.png"), url("https://sun9-west.userapi.com/sun9-12/s/v1/ig2/aaukE4OiXRPTG7zLmwrhAYJOG58uFbf31DXZKN7hsOjdVJY2CIHU0mj3jBHiyt0ZWesWJlE9Xpd4xb3RV0_6480U.jpg?size=2560x1376&quality=95&type=album");
+    background-size: 135%;
+    background-repeat: no-repeat;
+    height: 93vh;
+    background-color: #1a1f2d;
+    overflow-x: hidden;
+}
+
+.wrapper_news a img {
+    border-radius: 10px;
+}
+
+.wrapper_news a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+.new_news {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    width: 1320px;
+
+}
+
+.item_news {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.item_news a {
+    display: flex;
+    gap: 20px;
+}
+
+.item_news a h1 {
+    width: 700px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.news_description p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.news_description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+a:hover img{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.news_description span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.news_description p {
+    color: #BFC6CC;
+}
+
+@media (max-width: 420px) {
+    .wrapper_news {
+        background-size: 350%;
+    }
+
+    .new_news {
+        width: 400px;
+        justify-content: center;
+    }
+
+    .new_news a {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .new_news a img {
+        width: 300px;
+        height: 170px;
+    }
+
+    .item_news a h1 {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .news_description {
+        align-items: center;
+    }
+
+    .news_description p {
+        display: none;
+    }
+
+    .news_description span {
+        display: none;
+    }
+
+}

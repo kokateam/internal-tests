@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper_guides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(17, 27, 45), rgba(16, 24, 35, .7)), url("../img/tiny-squares.png"), url("https://sun9-west.userapi.com/sun9-12/s/v1/ig2/aaukE4OiXRPTG7zLmwrhAYJOG58uFbf31DXZKN7hsOjdVJY2CIHU0mj3jBHiyt0ZWesWJlE9Xpd4xb3RV0_6480U.jpg?size=2560x1376&quality=95&type=album");
+    background-size: 135%;
+    background-repeat: no-repeat;
+    height: 93vh;
+    background-color: #1a1f2d;
+    overflow-x: hidden;
+}
+
+/* Анимация прокрутки при скролле */
+.element-animation {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.item_guide {
+    width: 1320px;
+    margin-top: 50px;
+}
+
+.guide_description h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.guide_description p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item_guide a{
+    display: flex;
+    gap: 50px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item_guide a img {
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 420px) {
+    .wrapper_guides {
+        background-size: 350%;
+    }
+
+    .element-animation {
+        opacity: 1;
+    }
+
+    .item_guide {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .item_guide a {
+        display: flex;
+        align-items: center;
+        width: 350px;
+        gap: 10px;
+    }
+
+    .guide_description h2 {
+        font-size: 14px;
+    }
+
+    .guide_description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .guide_description span {
+        font-size: 10px;
+    }
+
+    .guide_description p {
+        display: none;
+    }
+
+    .item_guide a img {
+        width: 200px;
+        height: 120px;
+    }
+}

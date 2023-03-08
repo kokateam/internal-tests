@@ -1,0 +1,55 @@
+.container_new_player {
+    color: #ffffff;
+}
+
+.wrapper_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(17, 27, 45), rgba(16, 24, 35, .7)), url("../img/tiny-squares.png"), url("https://sun9-west.userapi.com/sun9-12/s/v1/ig2/aaukE4OiXRPTG7zLmwrhAYJOG58uFbf31DXZKN7hsOjdVJY2CIHU0mj3jBHiyt0ZWesWJlE9Xpd4xb3RV0_6480U.jpg?size=2560x1376&quality=95&type=album");
+    background-size: 135%;
+    background-repeat: no-repeat;
+    height: 93vh;
+    background-color: #1a1f2d;
+    overflow-x: hidden;
+}
+
+.container_new_player {
+    width: 1320px;
+    margin-top: 50px;
+}
+
+.main_description_newAgent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main_description_newAgent img {
+    border-radius: 10px;
+}
+
+.main_description_newAgent span {
+    color: #00FCCE;
+}
+
+@media (max-width: 420px) {
+    .container_new_player {
+        width: 350px;
+    }
+
+    .wrapper_content {
+        background-size: 350%;
+    }
+
+    .container_new_player h1 {
+        font-size: 20px;
+        text-align: center;
+        color: #9a9a9a;
+    }
+
+    .main_description_newAgent img{
+        width: 350px;
+        margin-bottom: 20px;
+    }
+}

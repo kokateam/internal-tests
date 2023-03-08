@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(17, 27, 45), rgba(16, 24, 35, .7)), url("../img/tiny-squares.png"), url("https://sun9-west.userapi.com/sun9-12/s/v1/ig2/aaukE4OiXRPTG7zLmwrhAYJOG58uFbf31DXZKN7hsOjdVJY2CIHU0mj3jBHiyt0ZWesWJlE9Xpd4xb3RV0_6480U.jpg?size=2560x1376&quality=95&type=album");
+    background-size: 135%;
+    background-repeat: no-repeat;
+    height: 93vh;
+    background-color: #1a1f2d;
+    overflow-x: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 1320px;
+    margin-top: 50px;
+    color: #ffffff;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.video {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.height_block {
+    height: 93vh;
+}
+
+.content li {
+    color: #ec555a;
+}
+
+.content span {
+    color: #ffffff;
+}
+
+@media (max-width: 420px) {
+    .content {
+        width: 300px;
+    }
+
+    .content h1 {
+        font-size: 20px;
+        text-align: center;
+        color: #9a9a9a;
+    }
+
+    .video iframe {
+        width: 300px;
+        height: 150px;
+    }
+
+    .height_block {
+        height: 100%;
+    }
+
+    .wrapper_content {
+        background-size: 350%;
+    }
+}
